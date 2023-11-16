@@ -1,0 +1,18 @@
+.youtube-form{
+    width: 400px;
+    height: 400px;
+    /* background-color: antiquewhite;`~ */
+    margin: 100px auto 0 auto;
+}
+
+.form{
+    width: 50%;
+    height: 50%;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    /* background-color: azure; */
+}
+
+.error{
+    color: red;
+}
