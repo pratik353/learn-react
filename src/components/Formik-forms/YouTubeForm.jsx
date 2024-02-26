@@ -37,8 +37,7 @@ const YouTubeForm = () => {
 
 //   console.log("Errors ", formik.errors);
 //   console.log("formik values", formik.values);
-  console.log("visited", formik.touched);
-
+console.log('component renderede');
   return (
     <div className="youtube-form">
       {/* <form action="" className="form" onSubmit={formik.handleSubmit}> */}

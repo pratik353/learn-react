@@ -20,6 +20,7 @@
     "luxon": "^3.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.48.2",
     "react-icons": "^4.4.0",
     "react-page": "^2.5.5",
     "react-paginate": "^8.1.3",

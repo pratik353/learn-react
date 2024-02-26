@@ -34,8 +34,17 @@ import UploadPDF from "./components/uploadPDF/UploadPDF";
 import JSONToPDF from "./components/PDF-download/JsonToPdf";
 import CustomGrid from "./components/css/CutomGrid";
 import TanstackTable from "./components/react-tanstack-table/TanstackTable";
+import ReactForm from "./components/react-forms/ReactForm";
 
-const App = () => (
+const App = () => {
+  
+  fetch('https://jsonplaceholder.typicode.com/todos/1')
+.then(response =>{
+  console.log(response.headers.get('Content-Type'))
+  return response.json()
+})
+.then(json => console.log(json))
+  return (
   <div className="app">
     {/* <ClickCounter name='Pranay'/>
         <HoverCounter  name='pratik'/> */}
@@ -51,7 +60,7 @@ const App = () => (
     {/* <UseRef /> */}
     {/* <FRIparent /> */}
     {/* < PortalDemo /> */}
-    {/* < YouTubeForm /> */}
+    {/* < YouTubeForm /> */}{/* Formik */}
     {/* < Create /> */}
     {/* <BasicTable /> */}
     {/* <SortTable /> */}
@@ -75,8 +84,9 @@ const App = () => (
       <CustomGrid row={1} col={1} rowSpan={2} colSpan={1} />
       <CustomGrid row={3} col={2} rowSpan={3} colSpan={3} />
     </div> */}
-    <TanstackTable/>
-  </div>
-);
+    {/* <TanstackTable/> */}
+    <ReactForm/>
+  </div>)
+  };
 
 export default App;
